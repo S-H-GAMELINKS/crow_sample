@@ -4,7 +4,7 @@ int main() {
   crow::SimpleApp app;
 
   CROW_ROUTE(app, "/")([](){
-      return "Hello, World!";
+      return "<h1>Hello, World!</h1>";
   });
 
   app.port(3000).multithreaded().run();
